@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo{
+    display: flex;
+    align-items: center;
+    padding: 20%;
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+
+    &__div_img {
+        width: 100%;
+        height: 100%;
+        
+     }
+
+
+     &____img {
+        width: 50%;
+        height: 50%;
+     }
+}
