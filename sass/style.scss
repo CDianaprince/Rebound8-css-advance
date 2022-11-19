@@ -4,23 +4,107 @@
     box-sizing: border-box;
 }
 
-.fondo{
-    display: flex;
-    align-items: center;
-    padding: 20%;
-    background-color: beige;
+body{
     width: 100%;
     height: 100%;
+    background-color: rgb(35, 103, 35);
+}
 
-    &__div_img {
+.fondo{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+    position: relative;
+    background-image: url(/img/patio.jpg);
+
+    &__div_img1 {
+        width: 100%;
+        height: 100%;  
+        padding: 10%;  
+        animation-name: fondo__div_img1;
+        position: relative;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;}
+
+
+        &__img {
+            width: 50%;
+            height: 50%;
+    
+         }
+
+
+     @keyframes fondo__div_img1 {
+    
+        0% { left: 0px; top: 0px;
+        }
+
+        25% {
+            transform: translateX(10px);
+            left: 300px; top: 300px;
+        }
+
+        50% {
+            transform: translate(1px);
+            left: 30px; top: 300px;
+        }
+
+        75%{
+            left: 0px; top: 0px;
+        }
+        
+        
+
+     }
+
+     &__div_img2 {
         width: 100%;
         height: 100%;
+        padding: 5%;
+        position: relative;
+        animation-name: fondo__div_img2;
+        animation-duration: 4s;
+        animation-iteration-count:infinite;
+        animation-play-state:running;
+        transition: 2s;
+
+    
+
+        &__img2 {
+
+            width: 200px;
+            height: 200px;
+         }
         
-     }
+        }
+        
+        
+
+     @keyframes fondo__div_img2 {
+        
+        0% {translate: -15%px; left: 50px; top: 0px;
+        }
+
+        20% {translate: -70%; left: 300px; top: 300px;
+            
+        }
+
+        50% {
+            translate: -50%; left: 50px; top: 300px;
+            
+        }
+
+        75%{
+            translate: -60%; left: -100px; right: 100px; top: 0px;
+            
+        }
+
+     
+
+    }
 
 
-     &____img {
-        width: 50%;
-        height: 50%;
-     }
+
+
 }
