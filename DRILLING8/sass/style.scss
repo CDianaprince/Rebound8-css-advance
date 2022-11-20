@@ -32,24 +32,64 @@ body{
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-name: header;
-       }
+    }
+
+    @keyframes header {
+        0%{transform: rotateY(180deg); translate: 20%; left: 10;top:0%}
+    
+        
+        
+    }
+
+   &__div-foot{
+        background-color: rgb(202, 127, 30);
+        border-radius: 4px;
+        text-align: center;
+        padding: 2%;
+        padding-bottom: 1%;
+        font-weight: 700;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        position: relative;
+        animation-name: footer;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        transition-duration: 5s;
+        transition-delay: 5s;
+
+
+        @keyframes footer {
+            0%{
+                left: 0%; top:0%;
+
+            }
+
+            50%{ left:20%; top:0%;
+
+            }
+            100%{
+                right: 20%;top:0%;
+
+            }
+            
+        }
+
+        &__button{
+            background-color: red;
+            padding: 2%;
+            margin-top: 3%;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            font-weight: 700;
+
+        }
+    }
 
 
 }
-
-/*.main__div-head:hover{
-    transform: translate(100%);
-
-
-}*/
-
-@keyframes header {
-    0%{transform: rotateY(180deg); translate: 20%; left: 10;top:0%}
-
-    
-    
-}
-
 
 .form{
     display: flex;
@@ -101,19 +141,17 @@ body{
         text-align: center;
         margin-left: 5%;
         font-weight: 700;
-        font-style: oblique;
-        
-
-       }
+        font-style: oblique;  }
 
     }
 
-    .form__button {
+
+    &__button {
+        padding-top: 4%;
         padding-left: 40%;
         padding-bottom: 1%;
-      
-        
 
+      
         &__button{
         background-color: rgb(213, 50, 50);
         padding: 5%;
@@ -124,76 +162,14 @@ body{
         color: white;
         transition-property: transform;
         transition-duration: 0.5s;
-        
-        transition-timing-function: ease;
-            }
-
-    }
-
-    &__button{
-        padding-top: 4%;
-        padding-left: 20%;
-        padding-bottom: 5%;
-
+        transition-timing-function: ease; }
     }
 
 }
 
 .form__button__button:hover{
-    transform: translate(100%);
+    transform: translatex(100%);     
     
-    
-
-}
-
-.main__div-foot{
-    background-color: rgb(202, 127, 30);
-    border-radius: 4px;
-    text-align: center;
-    padding: 2%;
-    padding-bottom: 1%;
-    font-weight: 700;
-    margin-top: 1%;
-    margin-bottom: 5%;
-    position: relative;
-    animation-name: footer;
-    animation-duration: 5s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    transition-duration: 5s;
-    transition-delay: 5s;
-
-
-    @keyframes footer {
-     0%{
-        left: 0%; top:0%;
-
-     }
-
-     50%{ left:20%; top:0%;
-
-     }
-     100%{
-        right: 20%;top:0%;
-
-     }
-        
-    }
-
-
-
-    &__button{
-        background-color: red;
-        padding: 2%;
-    
-        margin-top: 3%;
-        color: white;
-        border-radius: 50%;
-        border: none;
-        font-weight: 700;
-
-    }
 
 }
 
