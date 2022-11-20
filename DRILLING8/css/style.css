@@ -3,30 +3,106 @@
   padding: 0;
 }
 
-body {
-  background-color: bisque;
-}
-
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 5%;
   line-height: 150%;
+  background-image: url(../DRILLING8/img/payaso-imagen-animada.gif);
+  background-repeat: repeat;
 }
 
 .main__div-head {
-  padding-bottom: 2%;
+  padding-bottom: 1%;
+  background-color: red;
+  padding: 2%;
+  width: 50%;
+  margin-bottom: 2%;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  font-style: oblique;
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgb(73, 73, 232);
   padding-bottom: 2%;
+  width: 50%;
+  height: 100%;
+  border-style: dotted;
+  border-color: yellow;
+}
+.form__div {
+  padding-left: 8%;
+  padding-top: 5%;
+  width: 90%;
+  height: 50%;
+}
+.form__div__label {
+  text-transform: uppercase;
+  color: red;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-color: white;
+}
+.form__div__input {
+  background-color: rgb(187, 187, 201);
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 90%;
+  padding: 2%;
+}
+.form__div__div--p {
+  padding-left: 0%;
+  padding-top: 0%;
+  text-align: center;
+  margin-left: 5%;
+  font-weight: 700;
+  font-style: oblique;
+}
+.form .form__button {
+  padding-left: 40%;
+  padding-bottom: 1%;
+}
+.form .form__button__button {
+  background-color: rgb(213, 50, 50);
+  padding: 5%;
+  border: none;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 30%;
+  color: white;
 }
 .form__button {
   padding-top: 4%;
   padding-left: 20%;
   padding-bottom: 5%;
+}
+
+.main__div-foot {
+  background-color: rgb(202, 127, 30);
+  border-radius: 4px;
+  text-align: center;
+  padding: 2%;
+  padding-bottom: 1%;
+  font-weight: 700;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+.main__div-foot__button {
+  background-color: red;
+  padding: 2%;
+  margin-top: 3%;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
