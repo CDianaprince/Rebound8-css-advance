@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-image: url(../img/payaso-imagen-animada.gif);
+    background-repeat: repeat;
+}
 
 
 .main{
@@ -12,21 +16,40 @@
     flex-direction: column;
     padding-top: 5%;
     line-height: 150%;
-    background-image: url(../DRILLING8/img/payaso-imagen-animada.gif);
-    background-repeat: repeat;
-}
 
-.main__div-head{
+
+    &__div-head{
     padding-bottom: 1%;
     background-color: red;
     padding: 2%;
-    width: 50%;
+    width: 10%;
     margin-bottom: 2%;
     text-align: center;
     border-radius: 4px;
     color: white;
-    font-style: oblique;
+    font-style: oblique; 
+    transition-property: transform;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: header;
+       }
+
+
 }
+
+/*.main__div-head:hover{
+    transform: translate(100%);
+
+
+}*/
+
+@keyframes header {
+    0%{transform: rotateY(180deg); translate: 20%; left: 10;top:0%}
+
+    
+    
+}
+
 
 .form{
     display: flex;
@@ -54,6 +77,8 @@
         text-decoration-color: white;
        }
 
+    
+
        &__input{
         background-color: rgb(187, 187, 201);
         border: none;
@@ -61,6 +86,13 @@
         border-radius: 4px;
         width:90%;
         padding: 2%;
+       }
+
+       .form__div__input:hover{
+
+        background-color: black;
+        color: black;
+
        }
 
        &__div--p{
@@ -76,11 +108,11 @@
 
     }
 
-
-
     .form__button {
         padding-left: 40%;
         padding-bottom: 1%;
+      
+        
 
         &__button{
         background-color: rgb(213, 50, 50);
@@ -90,6 +122,10 @@
         border-radius: 4px;
         width: 30%;
         color: white;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        
+        transition-timing-function: ease;
             }
 
     }
@@ -103,6 +139,13 @@
 
 }
 
+.form__button__button:hover{
+    transform: translate(100%);
+    
+    
+
+}
+
 .main__div-foot{
     background-color: rgb(202, 127, 30);
     border-radius: 4px;
@@ -112,6 +155,31 @@
     font-weight: 700;
     margin-top: 1%;
     margin-bottom: 5%;
+    position: relative;
+    animation-name: footer;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition-duration: 5s;
+    transition-delay: 5s;
+
+
+    @keyframes footer {
+     0%{
+        left: 0%; top:0%;
+
+     }
+
+     50%{ left:20%; top:0%;
+
+     }
+     100%{
+        right: 20%;top:0%;
+
+     }
+        
+    }
 
 
 
